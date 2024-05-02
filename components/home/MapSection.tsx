@@ -25,7 +25,7 @@ const MapSection = () => {
         ? [Number(query.get('lat')), Number(query.get('lng'))]
         : INITIAL_CENTER,
     [query]
-  );
+  );//
 
   /** onLoadMap */
   const { initializeMap } = useMap();
