@@ -13,7 +13,7 @@ const Marker = ({ map, coordinates, icon, onClick }: Marker): null => {
       });
     }
 
-    if (onClick) {
+    if (onClick) { // 마커를 클릭했을 때 prop으로 전달한 onClick 함수가 실행 됨
       naver.maps.Event.addListener(marker, 'click', onClick);
     }
 
