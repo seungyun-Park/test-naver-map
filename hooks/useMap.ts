@@ -12,7 +12,7 @@ const useMap = () => {
   const { data: map } = useSWR(MAP_KEY);
 
   const initializeMap = useCallback((map: NaverMap) => {
-    mutate(MAP_KEY, map);
+    mutate(MAP_KEY, map); //MAP_KEY를 key로 하는 공간에 데이터를 전역으로 저장해두겠다는 뜻
   }, []);
 
   const resetMapOptions = useCallback(() => {
