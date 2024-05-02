@@ -11,7 +11,7 @@ const MapSection = () => {
   const onLoadMap = (map: NaverMap) => {
     initializeMap(map);
     naver.maps.Event.addListener(map, 'click', clearCurrentStore); //map이 클릭된 경우 clear
-  };//
+  };
 
   return (
     <>
