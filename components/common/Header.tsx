@@ -6,16 +6,18 @@ import Image from 'next/image';
 import styles from '../../styles/header.module.scss';
 
 interface Props {
+  onClickLogo? : () => void;
   rightElements?: React.ReactElement[];
 }
 
-const HeaderComponent = ({ rightElements }: Props) => {
+const HeaderComponent = ({ onClickLogo, rightElements }: Props) => {
   return (
     <header className={styles.header}>
       <div className={styles.flexItem}>
         <Link
           href="/"
           className={styles.box}
+          onClick={onClickLogo}
           aria-label="홈으로 이동"
         >
         <Image

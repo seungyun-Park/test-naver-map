@@ -38,7 +38,10 @@ const MapSection = () => {
 
   return (
     <>
-      <Map onLoad={onLoadMap} />
+      <Map onLoad={onLoadMap}
+        initialZoom={initialZoom}
+        initialCenter={initialCenter} 
+      />
       <Markers />
     </>
   );

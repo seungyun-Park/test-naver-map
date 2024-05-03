@@ -22,7 +22,7 @@ const HomeHeader = () => {
 
   return (
     <Header
-      //onClickLogo={resetMapOptions}
+      onClickLogo={resetMapOptions}
       rightElements={[
         <button
           onClick={replaceAndCopyUrl}
