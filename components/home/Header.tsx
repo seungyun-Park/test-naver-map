@@ -19,7 +19,7 @@ const HomeHeader = () => {
     router.replace(query);
     copy(location.origin + query); 
   }, [router, getMapOptions]);
-//
+
   return (
     <Header
       onClickLogo={resetMapOptions}
