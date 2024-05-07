@@ -10,7 +10,7 @@ const Marker = ({ map, coordinates, icon, onClick }: Marker): null => {
         map: map,
         position: new naver.maps.LatLng(...coordinates),
         icon,
-      });
+      }); 
     }
 
     if (onClick) { // 마커를 클릭했을 때 prop으로 전달한 onClick 함수가 실행 됨
