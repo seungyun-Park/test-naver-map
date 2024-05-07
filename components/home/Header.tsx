@@ -17,9 +17,9 @@ const HomeHeader = () => {
     const query = `/?zoom=${mapOptions.zoom}&lat=${mapOptions.center[0]}&lng=${mapOptions.center[1]}`;
 
     router.replace(query);
-    copy(location.origin + query);
+    copy(location.origin + query); 
   }, [router, getMapOptions]);
-
+//
   return (
     <Header
       onClickLogo={resetMapOptions}
