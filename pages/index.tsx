@@ -8,6 +8,7 @@ import styles from '../styles/header.module.scss';
 import MapSection from '../components/home/MapSection';
 import { Store } from '../types/store';
 import useStores from '../hooks/useStores';
+import DetailSection from '@/components/home/DetailSection';
 
 interface Props {
   stores: Store[];
@@ -24,8 +25,9 @@ const Home: NextPage<Props> = ({ stores }) => {
   return (
     <Fragment>
       <Header/>
-      <main style={{ width: '100%', height: '100%' }}>
+      <main style={{position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
         <MapSection />
+        <DetailSection />
       </main>
     </Fragment>
   );
