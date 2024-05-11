@@ -9,6 +9,7 @@ import MapSection from '../components/home/MapSection';
 import { Store } from '../types/store';
 import useStores from '../hooks/useStores';
 import DetailSection from '@/components/home/DetailSection';
+import { NextSeo } from 'next-seo';
 
 interface Props {
   stores: Store[];
@@ -24,6 +25,10 @@ const Home: NextPage<Props> = ({ stores }) => {
 
   return (
     <Fragment>
+      <NextSeo 
+        title="매장 지도"
+        description='Next 매장 지도 서비스 입니다'
+      />
       <Header/>
       <main style={{position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
         <MapSection />

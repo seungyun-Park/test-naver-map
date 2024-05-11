@@ -26,6 +26,7 @@ const DetailContent = ({ currentStore, expanded }: Props) => {
               alt=""
               fill
               style={{ objectFit: 'cover' }} //비율 깨지지 않도록
+              sizes = "120px"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO0WhFsDwADzwF2mLYSJgAAAABJRU5ErkJggg=="
             />
