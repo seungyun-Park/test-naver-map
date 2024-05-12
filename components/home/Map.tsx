@@ -30,6 +30,7 @@ const Map = ({
       logoControlOptions: {
         position: naver.maps.Position.BOTTOM_LEFT,
       },
+      //bounds: {north: 36.6128516, east: 127.2954047, south: 36.6060048, west: 127.2787535}
     };
 
     /** https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Getting-Started.html */

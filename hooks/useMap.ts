@@ -3,8 +3,8 @@ import useSWR, { mutate } from 'swr';
 import type { Coordinates } from '../types/store';
 import type { NaverMap } from '../types/map';
 //
-export const INITIAL_CENTER: Coordinates = [37.5262411, 126.99289439];
-export const INITIAL_ZOOM = 10;
+export const INITIAL_CENTER: Coordinates = [36.6099321, 127.2869396];
+export const INITIAL_ZOOM = 17;
 
 export const MAP_KEY = '/map';
 
