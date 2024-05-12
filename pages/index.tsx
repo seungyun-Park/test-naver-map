@@ -26,8 +26,8 @@ const Home: NextPage<Props> = ({ stores }) => {
   return (
     <Fragment>
       <NextSeo 
-        title="매장 지도"
-        description='Next 매장 지도 서비스 입니다'
+        title="학교 지도"
+        description='Next 지도 서비스 입니다'
       />
       <Header/>
       <main style={{position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
